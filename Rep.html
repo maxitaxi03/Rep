@@ -4,24 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rep from Github</title>
-    <style>
-      body {
-        background-color: aqua;
-      }
-    </style>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet"> 
+
   </head>
   <body>
-    <h1 style="color: white">Welcome to my website!</h1>
-    <h2>
-      This is another heading, which means it's another change, but the branch
-      master does not have it
-    </h2>
-    <p>
-      This means i have to use the command git pull, to pull this new info
-      locally.
-    </p>
-
-    <p>Commands I've learnt so far:</p>
+    <header>
+      <div class="logo-wrapper"> 
+        <h6>CSHEET</h6>
+      </div>
+      <nav>
+        <div class="nav-links">
+        <li><a id="home" class="nav-link">Home</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </div>
+      </nav>
+      <div class="name-wrapper">
+        <h4>Maximus Boxill</h4>
+      </div>
+    </header>
+    <main>
+   <div class="basics-wrapper">
+     <h2>Basic commands to get started</h2>
     <ul>
       <li>git clone - adds a new repository on branch master.</li>
       <li>
@@ -57,52 +66,51 @@
         repository that is on github
       </li>
     </ul>
-    <h3>Branching</h3>
-    <p>
-      Branching is the process of working on different parts of the repository
-      at the same time
-    </p>
-    <p>There is a master branch which is the default branch</p>
-    <p>
-      The master branch is default branch which holds up to date, stable version
-      of code
-    </p>
-    <p>feature branch is newer additional features</p>
-    <p>
-      focus on one branch at a time, and where your focus is, current state of
-      repository is where head is
-    </p>
-    <p>
-      whereever head is pointing at, means you're working or looking at that
-      particular branch
-    </p>
-    <p>
-      after the feature and bug fixes are corrected, it will be merged back on
-      the master version of the code.
-    </p>
+  </div>
+  <div class="branching-wrapper">
+    <h2>Some commands for branching</h2>
+
 
     <ul>
       <li>
         git branch - lets you know what branch you are on, and what branches
-        exist in your repository. the syntax would look like this: git branch
-        and the output can be * master- which means i am currently working on
-        the master branch
+        exist in your repository. 
+      </li>
+      <li>
+        git branch -d - deletes a branch
+      </li>
+      <li>
+        git branch -a - lists all branches (local and remote)
+      </li>
+      <li>
+        git branch [brach name] - creates a new branch
+      </li>
+      <li>
+
       </li>
       <li>
         git checkout -b style - this creates a new branch where "style" is the
         name of the new branch
       </li>
       <li>
-        git checkout 'branchname' - this allows the user to change between
+        git checkout [branchname] - this allows the user to change between
         branches.
       </li>
     </ul>
     <li>
-      git merge - will merge in changes made in other branches in 1 branch,
-      mainly master branch for instance, if you are on master branch and you
-      merge stuff, you'll be adding changes from other branches INTO the master
-      branch
+      git merge - will merge in changes made in other branches in 1 branch
     </li>
-    Hello everyone!!! it is me, maximus boxill
+   
+  </div>
+  </main>
+
+  <footer>
+    <div id="contact" class="contact">
+      <h4>Email address: maximusboxill74@gmail.com</h4>
+    </div>
+    <div class="num">
+      <p>Telephone number: 271-SIKE</p>
+    </div>
+  </footer>
   </body>
 </html>
